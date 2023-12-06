@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg__student_course_admission
+    description: stg_stg_student_course_admission
+    tests:
+      - table_not_empty 
+
+  - name: stage__student_unit_enrolment
+    description: stage__student_unit_enrolment
+    tests:
+      - table_not_empty 
