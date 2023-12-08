@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: output__student_management_model
+    tests:
+      - table_not_empty
