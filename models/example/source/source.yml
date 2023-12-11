@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: student_course
+    database: ods
+    schema: student_course
+    tables:
+      - name: student
+        description: >
+          Student First Name Last Name and Email
+        tests:
+          - table_not_empty
+      - name: course
+        description: >
+          Course Code and title
+        tests:
+          - table_not_empty
+      - name: student_course_admission
+        description: >
+          Student Course admission status and year
+        tests:
+          - table_not_empty
+
+      - name: student_unit_enrolment
+        description: >
+          Student Enrolment Status, Fee Amount, Unit Mark
+        tests:
+          - table_not_empty
+      - name: unit
+        description: >
+          Unit Code, Title and Credit Points
+        tests:
+          - table_not_empty

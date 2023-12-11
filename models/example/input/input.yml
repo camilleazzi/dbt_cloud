@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: input__student
+    tests:
+      - table_not_empty
+  - name: input__course
+    tests:
+      - table_not_empty
+  - name: input__student_course_admission
+    tests:
+      - table_not_empty
+  - name: input__student_unit_enrolment
+    tests:
+      - table_not_empty
+  - name: input__unit
+      - table_not_empty
