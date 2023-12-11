@@ -3,14 +3,19 @@ version: 2
 models:
   - name: stg__student_unit_enrolment
     description: stage__student_unit_enrolment
-      - table_not_empty
+    columns:
+      - name: student_unit_enrolment_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
 
   - name: stg__student_course_admission
     description: stg_student_course_admission
-    tests:
-      - table_not_empty
+    columns:
+      - name: id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
 
-  - name: stg__student_course_test
-    description: stg_student_course_admission
-    tests:
-      - table_not_empty
