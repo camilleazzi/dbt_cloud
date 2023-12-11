@@ -5,6 +5,7 @@ with
     ),
     final as (
         select
+            student_unit_enrolment.student_unit_enrolment_id,
             student_unit_enrolment.student_course_admission_id,
             student_course_admission.student_id,
             student_course_admission.course_admission_status,
@@ -21,7 +22,6 @@ with
             student_unit_enrolment.unit_id,
             student_unit_enrolment.enrolment_date,
             student_unit_enrolment.enrolment_status,
-            student_unit_enrolment.student_unit_enrolment_id,
             student_unit_enrolment.fee_amount,
             student_unit_enrolment.unit_mark
         from student_course_admission
